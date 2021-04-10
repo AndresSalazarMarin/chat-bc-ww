@@ -1,0 +1,78 @@
+body {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.container {
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    box-sizing: border-box;
+    width: 35%;
+    height: 100%;
+}
+
+.txtarea {
+    outline: none;
+    border: solid 1px #BBB;
+    font-size: 15px;
+    height: 200px;
+    width: 300px;
+    background-color: #fff;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+.txtarea::-webkit-scrollbar {
+    width: 3px;
+}
+
+.txtarea::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+.txtarea::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+#startButton {
+    background-color: #A6A6A6;
+    color: #000032;
+}
+
+.fullsz {
+    width: 300px;
+}
+
+#chats {
+    margin-bottom: 0px;
+}
+
+.inp-conta {
+    padding-top: 100px;
+}
+
+.back-inp {
+    background-color: #A6A6A6;
+    padding: 0.25rem;
+    position: fixed;
+    display: flex;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    width: 300px;
+}
+
+#msg {
+    border: none;
+    padding: 0 1rem;
+    flex-grow: 1;
+    border-radius: 2rem;
+    margin: 0.25rem;
+    width: 300px;
+}
+#list-users {
+    width: 300px;
+    max-height: 500px;
+    overflow: auto;
+}
