@@ -1,11 +1,11 @@
 body {
     background-color: transparent;
     overflow: hidden;
+    background: #000032;
 }
-
 .container {
     position: fixed;
-    bottom: 5px;
+    bottom: 0;
     display: flex;
     box-sizing: border-box;
     width: 35%;
@@ -75,4 +75,43 @@ body {
     width: 300px;
     max-height: 500px;
     overflow: auto;
+}
+.nav-item .nav-link,
+.list-group .list-group-item {
+    position: relative;
+    border-radius: .25rem .25rem 0 0;
+    background-color: #ffffff;
+    color: coral;
+}
+.nav-item .nav-link.active,
+.list-group .list-group-item.active  {
+    background-color: coral;
+    color: #ffffff;
+}
+.entry-msg {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #bd1626;
+    transition-duration: .5s;
+    transform: scale(0);
+    transform-origin: center;
+}
+.entry-msg.active {
+    transform: scale(1);
+}
+.my-msg {
+    background: #b1b1b1;
+    text-align: right;
+}
+.new-msg {
+    background: transparent;
+    transition-duration: .75s;
+}
+.new-msg.active {
+    background: #ccc;
 }
