@@ -75,26 +75,6 @@ socket.on('close', function(userId) {
     $(`#list-${userId}`).remove();
 });
 
-// $('#msg').keypress(function(e) {
-
-//     if (e.keyCode === 13) {
-//         e.preventDefault();
-//         if ($('#msg').val() === '')
-//             return false;
-//         var msg = $('#msg').val();
-//         var objMsg = {
-//             'user': localUser,
-//             'msg': msg,
-//             'to': null
-//         };
-
-//         sendMessage(objMsg);
-
-//         $('#msg').val('');
-//         scrollMessage();
-//     }
-// });
-
 $(document).on('keypress', '.msg', function(e) {
 
     if (e.keyCode === 13) {
